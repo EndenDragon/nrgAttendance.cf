@@ -231,14 +231,14 @@ if emptyNames == False:
                                 <h4 style="color: black;"><strong>Percentage of attendance: """
     
     try:
-        print percentage
+        print str(percentage) + "% | Ratio: " + str(attendedCount) + " out of " + str(dateCount) + " days/events</strong></h4>"
         nonExistant = False
     except:
         print """<div class="alert alert-danger" role="alert">Name lookup failed! Make sure you had typed it correctly. Else if this problem keeps happening, please contact Catherine or Jeremy.</div>"""
         nonExistant = True
     else:
         pass
-    print """%</strong></h4>
+    print """
                              </div>
     """
 print """
