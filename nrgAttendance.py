@@ -4,6 +4,7 @@ print ""
 import cgi
 form = cgi.FieldStorage()
 import csv
+import sys
 try:
     firstName = str(form["fn"].value).replace(" ", "")
 except:
@@ -74,7 +75,7 @@ def convertDate(inDate):
         return str(year) + "-" + str(month) + "-" + str(day)
 
 
-print """
+sys.stdout.write( """
 <!DOCTYPE html>
 <html lang="en">
 
@@ -165,7 +166,12 @@ print """
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <a href="http://nrgOutreach.cf/"><button type="button" class="btn btn-warning btn-lg pull-right">Check your outreach hours!</button></a>
+                <a href="http://nrgOutreach.cf/""")
+
+if emptyNames == False:
+          sys.stdout.write( "nrgOutreach.py?fn=" + str(form["fn"].value) + "&ln=" + str(form["ln"].value))
+
+print '''"><button type="button" class="btn btn-warning btn-lg pull-right">Check your outreach hours!</button></a>
                 <h1>NRG Attendance Lookup</h1>
                 <p>By Jeremy Zhang</p>
                 
@@ -174,7 +180,7 @@ print """
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">Record Lookup</h3>
-"""
+'''
 
 if emptyNames == False:
     print """<div class="pull-right" style="position: relative; top: -20px;"><a href="nrgAttendance.py"><button type="button" class="btn btn-danger btn-xs">Clear</button></a></div>"""
