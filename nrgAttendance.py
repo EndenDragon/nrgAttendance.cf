@@ -165,6 +165,7 @@ print """
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
+                <a href="http://nrgOutreach.cf/"><button type="button" class="btn btn-warning btn-lg pull-right">Check your outreach hours!</button></a>
                 <h1>NRG Attendance Lookup</h1>
                 <p>By Jeremy Zhang</p>
                 
