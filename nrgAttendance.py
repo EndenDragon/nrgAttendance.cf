@@ -84,7 +84,7 @@ sys.stdout.write( """
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Newport Robotics Group Outreach Hours Lookup.">
+    <meta name="description" content="Newport Robotics Group Attendance Records Lookup.">
     <meta name="author" content="Jeremy Zhang">
 
     <title>NRG Attendance Record Lookup</title>
@@ -129,6 +129,13 @@ sys.stdout.write( """
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/icn/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@EndenDragon" />
+    <meta name="twitter:title" content="Newport Robotics Attendance Record" />
+    <meta name="twitter:description" content="Check your robotics attendance rate with this simple web tool!" />
+    <meta name="twitter:image" content="assets/icn/apple-icon-180x180.png" />
 </head>
 
 <body>
