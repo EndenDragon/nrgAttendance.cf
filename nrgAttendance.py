@@ -258,7 +258,7 @@ print """
                             <h3 class="panel-title">Friendly Attendance Reminder</h3>
                         </div>
                         <div class="panel-body">
-                            <p>In order to be considered "active" in NRG948, one must maintain a 67% attendance record. In addition, participating in Kickoff and Design Days is also required to attend competition, especially if you need a carpool to get there.</p>
+                            <p>In order to be considered "active" in NRG948, one must maintain a 72% attendance record. In addition, participating in Kickoff and Design Days is also required to attend competition, especially if you need a carpool to get there.</p>
                             <br />
                             <p>Important Dates to Know~</p>
                             <ul>
